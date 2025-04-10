@@ -19,17 +19,37 @@ const FrontendShowcase = () => {
 
     const section = document.getElementById("frontend");
     if (section) observer.observe(section);
-
+    
     return () => {
       if (section) observer.unobserve(section);
     };
   }, []);
-
+  
   const frontendProjects = [
+    {
+      title: "Raw Portfolio",
+      image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=400",
+      url: "https://raw-portfolio7.netlify.app",
+    },
+    {
+      title: "Sundown Studio",
+      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=400",
+      url: "https://sundown-studio-1.netlify.app",
+    },
+    {
+      title: "Duo Studio 2",
+      image: "https://images.unsplash.com/photo-1493421419110-74f4e85ba126?q=80&w=400",
+      url: "https://duo-studio-2.netlify.app",
+    },
     {
       title: "Coffeee Brew",
       image: "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?q=80&w=400",
       url: "https://coffeee-brew.netlify.app",
+    },
+    {
+      title: "Cafe Racers",
+      image: "https://images.unsplash.com/photo-1558981852-426c6c22a060?q=80&w=400",
+      url: "https://cafe-racers.netlify.app",
     },
     {
       title: "Buano Showcase",
@@ -37,29 +57,9 @@ const FrontendShowcase = () => {
       url: "https://buano-showcase.netlify.app",
     },
     {
-      title: "Build Archit",
-      image: "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?q=80&w=400",
-      url: "https://build-archit.netlify.app",
-    },
-    {
-      title: "Left Right",
-      image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=400",
-      url: "https://left-right.netlify.app",
-    },
-    {
-      title: "Madiera Beauty",
-      image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=400",
-      url: "https://madiera-beauty.netlify.app",
-    },
-    {
       title: "Streamo Movie",
       image: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=400",
       url: "https://streamo-movie.netlify.app",
-    },
-    {
-      title: "Maldives Beauty",
-      image: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?q=80&w=400",
-      url: "https://maldives-beauty.netlify.app",
     },
     {
       title: "Reeinder See",
@@ -75,11 +75,6 @@ const FrontendShowcase = () => {
       title: "One Punch Man",
       image: "https://images.unsplash.com/photo-1610296669228-602fa827fc1f?q=80&w=400",
       url: "https://1-punch-man.netlify.app",
-    },
-    {
-      title: "Raw Portfolio",
-      image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=400",
-      url: "https://raw-portfolio7.netlify.app",
     },
     {
       title: "British Newsy",
@@ -122,11 +117,6 @@ const FrontendShowcase = () => {
       url: "https://chocholate-can.netlify.app",
     },
     {
-      title: "Cafe Racers",
-      image: "https://images.unsplash.com/photo-1558981852-426c6c22a060?q=80&w=400",
-      url: "https://cafe-racers.netlify.app",
-    },
-    {
       title: "Marvel Heroes",
       image: "https://images.unsplash.com/photo-1612036782180-6f0822045d55?q=80&w=400",
       url: "https://marvel-heroes3.netlify.app",
@@ -142,6 +132,11 @@ const FrontendShowcase = () => {
       url: "https://apex-legend69.netlify.app",
     },
     {
+      title: "Maldives Beauty",
+      image: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?q=80&w=400",
+      url: "https://maldives-beauty.netlify.app",
+    },
+    {
       title: "Restaurant GetFood",
       image: "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=400",
       url: "https://restaurant-getfood.netlify.app",
@@ -152,14 +147,14 @@ const FrontendShowcase = () => {
       url: "https://eraf-photography.netlify.app",
     },
     {
-      title: "Duo Studio 2",
-      image: "https://images.unsplash.com/photo-1493421419110-74f4e85ba126?q=80&w=400",
-      url: "https://duo-studio-2.netlify.app",
-    },
-    {
       title: "Magna Real Estate",
       image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=400",
       url: "https://magna-real-estate.netlify.app",
+    },
+    {
+      title: "Build Archit",
+      image: "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?q=80&w=400",
+      url: "https://build-archit.netlify.app",
     },
     {
       title: "Lagunitas Beer",
@@ -192,6 +187,11 @@ const FrontendShowcase = () => {
       url: "https://tour-travel-book.netlify.app",
     },
     {
+      title: "Madiera Beauty",
+      image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=400",
+      url: "https://madiera-beauty.netlify.app",
+    },
+    {
       title: "Axel Furniture",
       image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=400",
       url: "https://axel-furniture.netlify.app",
@@ -207,14 +207,14 @@ const FrontendShowcase = () => {
       url: "https://gpt3-ai-future.netlify.app",
     },
     {
-      title: "Sundown Studio",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=400",
-      url: "https://sundown-studio-1.netlify.app",
-    },
-    {
       title: "Apply Zen",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=400",
       url: "https://apply-zen.netlify.app",
+    },
+    {
+      title: "Left Right",
+      image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=400",
+      url: "https://left-right.netlify.app",
     },
   ];
 
